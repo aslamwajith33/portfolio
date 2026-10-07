@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#090d14" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Aslam Wajith I | Embedded Systems &amp; IoT Design Portfolio</title>
+  <meta name="description" content="Portfolio of Aslam Wajith I — B.E. Electronics Engineering (VLSI Design & Technology) at Rajalakshmi Institute of Technology. Aspiring Embedded & IoT Design Engineer." />
+  <meta name="keywords" content="Aslam Wajith I, Ahmed Aslam Wajith, Embedded Systems, IoT, ESP32-S3, VLSI, LoRa, Verilog HDL, Chennai, Electronics Engineering" />
+  <meta name="author" content="Aslam Wajith I" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Aslam Wajith I | Embedded &amp; IoT Design Portfolio" />
+  <meta property="og:description" content="Explore projects, real-time IoT hardware, and resume of Aslam Wajith I." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2300f0ff'><path d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/></svg>" />
+</head>
+<body>
+  <!-- Subtle Canvas Background -->
+  <canvas id="circuit-canvas" class="circuit-bg"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="site-header" id="header">
+    <div class="header-container">
+      <a href="#hero" class="brand-logo" aria-label="Aslam Wajith I - Home">
+        <div class="logo-chip">
+          <svg class="chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+            <rect x="9" y="9" width="6" height="6"></rect>
+            <path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 15h3M1 9h3M1 15h3"></path>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">Aslam Wajith I</span>
+          <span class="logo-tag">EMBEDDED &bull; IOT &bull; VLSI</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#certificates" class="nav-link">Certificates</a></li>
+          <li><a href="#vlsi-lab" class="nav-link">VLSI Practice</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header CTAs -->
+      <div class="header-actions">
+        <button id="resume-btn" class="btn btn-outline btn-sm">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+          </svg>
+          <span>Resume</span>
+        </button>
+
+        <a href="#contact" class="btn btn-primary btn-sm hide-mobile">
+          <span>Get in Touch</span>
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <!-- Left: Introduction -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="pulse-indicator"></span>
+            <span class="badge-text">Available for Internships &bull; Embedded &amp; IoT Design</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <br />
+            <span class="text-gradient">Aslam Wajith I</span>
+          </h1>
+
+          <div class="hero-role-wrapper">
+            <span class="role-prefix">&gt; </span>
+            <span class="dynamic-role" id="typewriter">Aspiring Embedded &amp; IoT Design Engineer</span>
+            <span class="cursor">_</span>
+          </div>
+
+          <p class="hero-desc">
+            Passionate about building practical hardware solutions and intelligent connected systems. 
+            Focused on <strong>Embedded Systems, IoT, ESP32 firmware, VLSI digital logic, and sensors integration</strong> 
+            to solve real-world problems.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary btn-glow">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              <span>View Projects</span>
+            </a>
+
+            <button class="btn btn-outline" id="hero-resume-trigger">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download Resume</span>
+            </button>
+
+            <a href="#contact" class="btn btn-ghost">
+              <span>Let's Connect &rarr;</span>
+            </a>
+          </div>
+
+          <!-- Clean Info Strip -->
+          <div class="hardware-strip">
+            <div class="strip-item">
+              <span class="strip-label">DEGREE</span>
+              <span class="strip-value">B.E. Electronics &ndash; VLSI</span>
+            </div>
+            <div class="strip-divider"></div>
+            <div class="strip-item">
+              <span class="strip-label">COLLEGE</span>
+              <span class="strip-value">RIT Chennai</span>
+            </div>
+            <div class="strip-divider"></div>
+            <div class="strip-item">
+              <span class="strip-label">SPECIALIZATION</span>
+              <span class="strip-value text-cyan">Embedded &bull; IoT Design</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Profile Picture (Crystal Clear & Prominent) -->
+        <div class="hero-visual">
+          <div class="clean-profile-wrapper" id="profile-card">
+            <div class="profile-image-box">
+              <img 
+                src="assets/profile.jpg" 
+                alt="Aslam Wajith I — Embedded and IoT Design Engineer" 
+                class="profile-img" 
+                id="profile-img"
+                loading="eager"
+              />
+              <div class="profile-card-badge">
+                <span class="status-dot"></span>
+                <div>
+                  <div class="badge-title">Aslam Wajith I</div>
+                  <div class="badge-sub">Electronics Engineering &bull; 3rd Year</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-stat-floating">
+              <span class="stat-num">4+</span>
+              <span class="stat-text">National Level Awards</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">OVERVIEW</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-narrative">
+            <p class="lead-text">
+              I am a 3rd-year <span class="highlight">B.E. Electronics Engineering &mdash; VLSI Design &amp; Technology</span> student at 
+              <strong>Rajalakshmi Institute of Technology, Chennai</strong>.
+            </p>
+            <p>
+              My primary focus and passion is <strong>Embedded and IoT Design</strong>. I enjoy working hands-on with 
+              <strong>ESP32 / ESP32-S3 microcontrollers, sensors, Embedded C, wireless communication (LoRa, UART, I2C, SPI)</strong>, 
+              and edge intelligence to design practical, real-world hardware systems.
+            </p>
+            <p>
+              Alongside embedded systems, I develop my knowledge in <strong>VLSI design, digital logic, Verilog HDL, RTL design, 
+              and CMOS fundamentals</strong>. I believe in learning by experimenting directly with physical hardware, debugging circuits, 
+              and continuously refining my technical abilities.
+            </p>
+
+            <div class="goal-box">
+              <span class="goal-tag">CAREER OBJECTIVE</span>
+              <p class="goal-text">
+                Seeking an internship to apply practical engineering skills and gain industry experience in 
+                <strong>Embedded Systems, IoT, Firmware, or VLSI Engineering</strong>.
+              </p>
+            </div>
+          </div>
+
+          <!-- Clean Focus Cards -->
+          <div class="about-pillars">
+            <div class="pillar-card">
+              <div class="pillar-header">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="pillar-icon">
+                  <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+                  <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+                  <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+                  <line x1="12" y1="20" x2="12.01" y2="20"></line>
+                </svg>
+                <h3>Embedded &amp; IoT Design</h3>
+              </div>
+              <p>Hardware prototyping with ESP32-S3, sensor interfacing, LoRa communication, and edge intelligence deployment.</p>
+              <div class="pill-tags">
+                <span>ESP32-S3</span><span>Sensors</span><span>LoRa</span><span>IoT Architecture</span>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-header">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="pillar-icon text-purple">
+                  <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                  <line x1="9" y1="9" x2="15" y2="15"></line>
+                  <line x1="15" y1="9" x2="9" y2="15"></line>
+                </svg>
+                <h3>VLSI &amp; Digital Design</h3>
+              </div>
+              <p>Digital logic design, Verilog HDL modeling, RTL synthesis, combinational &amp; sequential circuits, and CMOS fundamentals.</p>
+              <div class="pill-tags">
+                <span>Verilog HDL</span><span>RTL Design</span><span>Quartus Prime</span><span>Digital Logic</span>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-header">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="pillar-icon text-green">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+                <h3>Firmware &amp; Software</h3>
+              </div>
+              <p>Embedded C programming, peripheral communications, Python scripting, and full-stack cloud dashboards.</p>
+              <div class="pill-tags">
+                <span>Embedded C</span><span>Python</span><span>UART/I2C/SPI</span><span>Linux &amp; Git</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">CAPABILITIES</span>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">Core competencies organized across embedded hardware, VLSI design, and development tools.</p>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill Category 1 -->
+          <div class="skill-group-card">
+            <div class="skill-group-header">
+              <div class="group-icon-wrap cyan">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="8" rx="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-group-title">Embedded &amp; IoT Design</h3>
+                <span class="skill-group-count">Core Focus</span>
+              </div>
+            </div>
+            <div class="skill-badge-cloud">
+              <span class="skill-chip active-core">Embedded C</span>
+              <span class="skill-chip active-core">ESP32 &amp; ESP32-S3</span>
+              <span class="skill-chip active-core">Sensor Interfacing</span>
+              <span class="skill-chip active-core">LoRa Communication</span>
+              <span class="skill-chip">UART</span>
+              <span class="skill-chip">I2C</span>
+              <span class="skill-chip">SPI Basics</span>
+              <span class="skill-chip">GPIO / ADC / PWM</span>
+              <span class="skill-chip">IoT Fundamentals</span>
+              <span class="skill-chip">Hardware Prototyping</span>
+            </div>
+          </div>
+
+          <!-- Skill Category 2 -->
+          <div class="skill-group-card">
+            <div class="skill-group-header">
+              <div class="group-icon-wrap purple">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3z"></path>
+                  <path d="M6 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3z"></path>
+                  <line x1="6" y1="12" x2="18" y2="12"></line>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-group-title">VLSI &amp; Digital Design</h3>
+                <span class="skill-group-count">Hardware Modeling</span>
+              </div>
+            </div>
+            <div class="skill-badge-cloud">
+              <span class="skill-chip active-core">Digital Logic Design</span>
+              <span class="skill-chip active-core">Verilog HDL</span>
+              <span class="skill-chip active-core">RTL Design</span>
+              <span class="skill-chip">CMOS Fundamentals</span>
+              <span class="skill-chip">ASIC Design Flow</span>
+              <span class="skill-chip">FPGA Fundamentals</span>
+              <span class="skill-chip">DFT (Design for Testability)</span>
+              <span class="skill-chip">ATPG &amp; Scan Chain Basics</span>
+            </div>
+          </div>
+
+          <!-- Skill Category 3 -->
+          <div class="skill-group-card">
+            <div class="skill-group-header">
+              <div class="group-icon-wrap amber">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-group-title">Programming Languages</h3>
+                <span class="skill-group-count">Software &amp; Scripting</span>
+              </div>
+            </div>
+            <div class="skill-badge-cloud">
+              <span class="skill-chip active-core">C (Embedded)</span>
+              <span class="skill-chip active-core">Python</span>
+              <span class="skill-chip active-core">Verilog HDL</span>
+              <span class="skill-chip">JavaScript</span>
+              <span class="skill-chip">SQL</span>
+            </div>
+          </div>
+
+          <!-- Skill Category 4 -->
+          <div class="skill-group-card">
+            <div class="skill-group-header">
+              <div class="group-icon-wrap green">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-group-title">Tools &amp; EDA Platforms</h3>
+                <span class="skill-group-count">Development Toolchains</span>
+              </div>
+            </div>
+            <div class="skill-badge-cloud">
+              <span class="skill-chip active-core">Intel Quartus Prime</span>
+              <span class="skill-chip active-core">Arduino IDE</span>
+              <span class="skill-chip active-core">VS Code</span>
+              <span class="skill-chip active-core">Git &amp; GitHub</span>
+              <span class="skill-chip">Linux</span>
+              <span class="skill-chip">eSim / NGSpice</span>
+              <span class="skill-chip">Vercel</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">PORTFOLIO</span>
+          <h2 class="section-title">Projects</h2>
+          <p class="section-subtitle">Real-world systems spanning IoT telemetry, smart agriculture, fire safety, and campus automation.</p>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- PROJECT 01: NEERMITRA AI -->
+          <article class="project-card flagship-card">
+            <div class="project-header-bar">
+              <span class="project-index">FEATURED PROJECT // 01</span>
+              <div class="project-status live-status">
+                <span class="award-star">&#9733;</span>
+                <span>4 NATIONAL-LEVEL AWARDS</span>
+              </div>
+            </div>
+
+            <div class="flagship-body-grid">
+              <div class="project-details">
+                <div class="project-category-tag">Project Lead &bull; Full-Stack Developer &bull; AI Agriculture Platform</div>
+                <h3 class="project-title">NeerMitra &mdash; AI-Powered Smart Agriculture Platform</h3>
+                <p class="project-summary">
+                  Built and deployed an intelligent agriculture platform integrating crop selection, disease identification, weather, soil insights, and agricultural resources.
+                </p>
+
+                <div class="feature-checklist">
+                  <div class="checklist-item">
+                    <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span><strong>Crop Doctor:</strong> Image-based computer vision identification of crop diseases and remedies.</span>
+                  </div>
+                  <div class="checklist-item">
+                    <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span><strong>Crop Planner:</strong> Predictive crop recommendations tailored to agricultural factors and climate.</span>
+                  </div>
+                  <div class="checklist-item">
+                    <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span><strong>Smart Dashboard:</strong> Weather &amp; soil-moisture telemetry, Government Schemes, and House Farming Guide.</span>
+                  </div>
+                  <div class="checklist-item">
+                    <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Presented platform at <strong>5+ national events, winning 4 national-level awards</strong>.</span>
+                  </div>
+                </div>
+
+                <div class="tech-tags">
+                  <span class="tag">AI / Machine Learning</span>
+                  <span class="tag">Soil Telemetry</span>
+                  <span class="tag">Crop Diagnostics</span>
+                  <span class="tag">Full-Stack Web</span>
+                  <span class="tag">Python</span>
+                </div>
+
+                <div class="project-actions">
+                  <a href="http://www.neermitra.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm btn-glow">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                    <span>Visit www.neermitra.com</span>
+                  </a>
+                  <button class="btn btn-outline btn-sm project-modal-trigger" data-project="04">
+                    <span>View Details</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Visual Card -->
+              <div class="project-preview-card">
+                <div class="terminal-bar">
+                  <div class="terminal-dot dot-green"></div>
+                  <span class="terminal-title">neermitra_core_metrics.log</span>
+                </div>
+                <div class="preview-content">
+                  <div class="award-callout">
+                    <span class="trophy-emoji">&#127942;</span>
+                    <div>
+                      <strong>4 National Awards Won</strong>
+                      <p>Recognized at 5+ technical symposiums &amp; innovation challenges across India.</p>
+                    </div>
+                  </div>
+                  <div class="metric-row">
+                    <div class="metric-box">
+                      <span class="metric-num">98%</span>
+                      <span class="metric-lbl">Diagnostic Accuracy</span>
+                    </div>
+                    <div class="metric-box">
+                      <span class="metric-num">30%+</span>
+                      <span class="metric-lbl">Water Conserved</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 02: DISASTER MANAGEMENT SYSTEM -->
+          <article class="project-card flagship-card">
+            <div class="project-header-bar">
+              <span class="project-index">FEATURED PROJECT // 02</span>
+              <div class="project-status live-status">
+                <span class="live-dot"></span>
+                <span>LIVE COMMAND HUB</span>
+              </div>
+            </div>
+
+            <div class="flagship-body-grid">
+              <div class="project-details">
+                <div class="project-category-tag">Hardware &amp; IoT Developer &bull; Edge AI Disaster Monitoring</div>
+                <h3 class="project-title">Disaster Management System</h3>
+                <p class="project-subhead text-cyan font-mono" style="margin-bottom:12px; font-size:0.92rem;">
+                  ZERODAY SYNDICATE | 4 Specialized Disaster Nodes &amp; National Command Hub
+                </p>
+                <p class="project-summary">
+                  Developed an ESP32-S3-based multi-sensor environmental disaster monitoring system integrating LoRa communication for real-time hazard detection, automated alerts, and offline edge intelligence.
+                </p>
+
+                <div class="feature-checklist">
+                  <div class="checklist-item">
+                    <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span><strong>4 Specialized Disaster Nodes:</strong> Flood &amp; Water-level, Forest Fire &amp; Smoke, Air Quality, Soil &amp; Weather.</span>
+                  </div>
+                  <div class="checklist-item">
+                    <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span><strong>LoRa Communication:</strong> Long-range sub-1GHz telemetry for remote and emergency zero-connectivity disaster zones.</span>
+                  </div>
+                  <div class="checklist-item">
+                    <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span><strong>Offline Edge Intelligence:</strong> Local decision algorithms on ESP32-S3 for immediate sirens without server lag.</span>
+                  </div>
+                  <div class="checklist-item">
+                    <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span><strong>National Command Hub:</strong> Real-time public incident dashboard deployed on Vercel.</span>
+                  </div>
+                </div>
+
+                <div class="tech-tags">
+                  <span class="tag">ESP32-S3</span>
+                  <span class="tag">Sensors Array</span>
+                  <span class="tag">LoRa (Sub-1GHz)</span>
+                  <span class="tag">Edge AI</span>
+                  <span class="tag">Embedded C</span>
+                  <span class="tag">Vercel</span>
+                </div>
+
+                <div class="project-actions">
+                  <!-- Direct link to user's dashboard -->
+                  <a href="https://disaster-management-eta-one.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm btn-glow" id="launch-disaster-hub-btn">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                    <span>Launch Dashboard Hub &rarr;</span>
+                  </a>
+                  <button class="btn btn-outline btn-sm project-modal-trigger" data-project="01">
+                    <span>Architecture View</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Terminal Preview -->
+              <div class="project-visual-terminal">
+                <div class="terminal-bar">
+                  <div class="terminal-dot dot-red"></div>
+                  <div class="terminal-dot dot-yellow"></div>
+                  <div class="terminal-dot dot-green"></div>
+                  <span class="terminal-title">zeroday_command_hub.esp32s3</span>
+                </div>
+                <div class="terminal-body font-mono">
+                  <div class="term-line text-cyan">[ZERODAY SYNDICATE] Command Hub Online</div>
+                  <div class="term-line">[NODE-1 FLOOD] Water Level: NORMAL (0.42m)</div>
+                  <div class="term-line">[NODE-2 WILDFIRE] IR Flame: CLEAR | Thermal: 28.4°C</div>
+                  <div class="term-line">[NODE-3 AIR-QUAL] MQ-2 Sensor: 42 ppm (STABLE)</div>
+                  <div class="term-line text-green">[LORA PACKET] RSSI: -68 dBm | SNR: 10.2 dB</div>
+                  <div class="term-line text-purple">[UPLINK] Syncing live to disaster-management-eta-one.vercel.app [200 OK]</div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 03: FIREGUARD AI -->
+          <article class="project-card standard-card">
+            <div class="project-header-bar">
+              <span class="project-index">PROJECT // 03</span>
+              <span class="project-badge">C &bull; PYTHON &bull; VERILOG HDL</span>
+            </div>
+            <div class="project-card-content">
+              <div class="project-category-tag">Embedded &bull; AI &bull; Fire Safety</div>
+              <h3 class="project-title">FireGuard AI</h3>
+              <p class="project-summary">
+                An AI-powered wildfire monitoring and emergency response platform for real-time fire-risk detection, prediction, and intelligent alerts using sensor fusion and hardware acceleration.
+              </p>
+              <div class="feature-bullets">
+                <div class="bullet">&bull; Multi-spectrum flame and smoke sensor interfacing</div>
+                <div class="bullet">&bull; Real-time AI hazard assessment with false-alarm filtering</div>
+                <div class="bullet">&bull; Sub-second emergency push notifications and siren dispatch</div>
+              </div>
+              <div class="tech-tags">
+                <span class="tag">C</span>
+                <span class="tag">Python</span>
+                <span class="tag">Verilog HDL</span>
+                <span class="tag">Flame Sensors</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-outline btn-sm project-modal-trigger" data-project="02">
+                  <span>View Details</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 04: CAMPUSMATE AI -->
+          <article class="project-card standard-card">
+            <div class="project-header-bar">
+              <span class="project-index">PROJECT // 04</span>
+              <span class="project-badge">CAMPUS AUTOMATION &bull; AI</span>
+            </div>
+            <div class="project-card-content">
+              <div class="project-category-tag">Embedded / Application &bull; AI Automation</div>
+              <h3 class="project-title">CampusMate AI</h3>
+              <p class="project-summary">
+                An intelligent campus assistant application designed for visitor registration, automated approval workflows, QR-based turnstile access, queue management, and interactive campus navigation.
+              </p>
+              <div class="feature-bullets">
+                <div class="bullet">&bull; Dynamic cryptographic QR gate verification</div>
+                <div class="bullet">&bull; Real-time administrative authorization portal</div>
+                <div class="bullet">&bull; Smart crowd management and facility navigation</div>
+              </div>
+              <div class="tech-tags">
+                <span class="tag">QR Access</span>
+                <span class="tag">Automation</span>
+                <span class="tag">Embedded Terminal</span>
+                <span class="tag">Queue Telemetry</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-outline btn-sm project-modal-trigger" data-project="03">
+                  <span>View Details</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATES & RECOGNITIONS SECTION -->
+    <section class="section cert-section" id="certificates">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">CREDENTIALS</span>
+          <h2 class="section-title">Certifications &amp; Hackathons</h2>
+          <p class="section-subtitle">Verified specializations, hackathon participations, and practical industry internships.</p>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="cert-grid">
+          <div class="cert-card">
+            <div class="cert-badge-icon cyan">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+              </svg>
+            </div>
+            <div class="cert-info">
+              <span class="cert-type">SPECIALIZATION</span>
+              <h3 class="cert-name">IoT Specialization</h3>
+              <div class="cert-org">Elewayte IoT</div>
+              <p class="cert-desc">Comprehensive training in IoT architecture, sensor interfacing, microcontroller programming, and hardware deployment.</p>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-badge-icon purple">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <div class="cert-info">
+              <span class="cert-type">HACKATHON</span>
+              <h3 class="cert-name">INNOHACK &rsquo;26</h3>
+              <div class="cert-org">Cyber Security &amp; Innovation Hackathon</div>
+              <p class="cert-desc">Participated in building innovative technical solutions focused on technology security and real-world problem-solving.</p>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-badge-icon green">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <div class="cert-info">
+              <span class="cert-type">PRACTICAL INTERNSHIP</span>
+              <h3 class="cert-name">Python Internship</h3>
+              <div class="cert-org">CodSoft</div>
+              <p class="cert-desc">Completed a 1-month practical internship focused on Python programming, automation scripts, and software development.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VLSI & HARDWARE PRACTICE SECTION WITH INTERACTIVE LOGIC TESTER -->
+    <section class="section vlsi-section" id="vlsi-lab">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">SILICON &amp; RTL</span>
+          <h2 class="section-title">VLSI &amp; Hardware Practice</h2>
+          <p class="section-subtitle">Hands-on practice across digital arithmetic, RTL design, and ASIC testing.</p>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="vlsi-layout-grid">
+          <!-- Column 1: Digital Design -->
+          <div class="vlsi-card">
+            <div class="vlsi-badge cyan">RTL DESIGN</div>
+            <h3 class="vlsi-title">Digital Design</h3>
+            <p class="vlsi-desc">Combinational and sequential building blocks modeled in Verilog HDL.</p>
+            <ul class="vlsi-list">
+              <li><strong>Multiplexer:</strong> 2:1, 4:1, 8:1 data selectors</li>
+              <li><strong>Full Adder &amp; Half Adder:</strong> Binary arithmetic</li>
+              <li><strong>Counters:</strong> Synchronous &amp; Asynchronous</li>
+              <li><strong>FSM:</strong> Mealy and Moore state sequence detectors</li>
+              <li><strong>ALU:</strong> Multi-operation bit-sliced execution</li>
+              <li><strong>Adders:</strong> Ripple Carry &amp; Carry Look-Ahead Adders</li>
+            </ul>
+          </div>
+
+          <!-- Column 2: Digital Arithmetic -->
+          <div class="vlsi-card">
+            <div class="vlsi-badge purple">HIGH SPEED ARITHMETIC</div>
+            <h3 class="vlsi-title">Digital Arithmetic</h3>
+            <p class="vlsi-desc">High-throughput multiplier algorithms for fast hardware computation.</p>
+            <ul class="vlsi-list">
+              <li><strong>Array Multiplier:</strong> Matrix partial products</li>
+              <li><strong>Booth Multiplier:</strong> Radix-2 signed multiplication</li>
+              <li><strong>Modified Booth Multiplier:</strong> Radix-4 encoding</li>
+              <li><strong>Wallace Tree Multiplier:</strong> Carry save reduction</li>
+            </ul>
+          </div>
+
+          <!-- Column 3: VLSI / ASIC -->
+          <div class="vlsi-card">
+            <div class="vlsi-badge amber">ASIC &amp; DFT FLOW</div>
+            <h3 class="vlsi-title">VLSI / ASIC Flow</h3>
+            <p class="vlsi-desc">Semiconductor concepts and testability fundamentals.</p>
+            <ul class="vlsi-list">
+              <li><strong>CMOS Logic:</strong> Inverters &amp; transmission gates</li>
+              <li><strong>MOS Regions:</strong> Cut-off, linear, and saturation</li>
+              <li><strong>ASIC Design Flow:</strong> RTL to GDSII lifecycle</li>
+              <li><strong>FPGA Architecture:</strong> LUTs, CLBs, and routing</li>
+              <li><strong>DFT &amp; Scan Chain:</strong> Testability &amp; ATPG patterns</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Clean Interactive Logic Simulator Widget -->
+        <div class="simulator-wrapper" style="margin-top: 40px;">
+          <div class="sim-nav-tabs">
+            <button class="sim-tab active" data-sim="adder">Interactive Full Adder (1-Bit)</button>
+            <button class="sim-tab" data-sim="mux">2-to-1 Multiplexer (MUX)</button>
+          </div>
+
+          <!-- Simulator 1: Full Adder -->
+          <div class="sim-content-pane active" id="sim-adder">
+            <div class="sim-layout">
+              <div class="sim-controls">
+                <h4 class="sim-title">Toggle Inputs (A, B, Cin):</h4>
+                
+                <div class="toggle-switch-group">
+                  <div class="toggle-item">
+                    <span class="toggle-name">Input A</span>
+                    <button class="logic-btn" id="btn-a" data-val="1">1</button>
+                  </div>
+                  <div class="toggle-item">
+                    <span class="toggle-name">Input B</span>
+                    <button class="logic-btn" id="btn-b" data-val="0">0</button>
+                  </div>
+                  <div class="toggle-item">
+                    <span class="toggle-name">Carry In (Cin)</span>
+                    <button class="logic-btn" id="btn-cin" data-val="1">1</button>
+                  </div>
+                </div>
+
+                <div class="sim-output-box">
+                  <div class="output-item">
+                    <span class="out-label">SUM:</span>
+                    <span class="out-val" id="out-sum">0</span>
+                  </div>
+                  <div class="output-item">
+                    <span class="out-label">CARRY OUT (Cout):</span>
+                    <span class="out-val text-cyan" id="out-cout">1</span>
+                  </div>
+                </div>
+
+                <div class="logic-eq">
+                  <code>Sum  = A ⊕ B ⊕ Cin</code><br />
+                  <code>Cout = (A · B) + (Cin · (A ⊕ B))</code>
+                </div>
+              </div>
+
+              <!-- RTL snippet -->
+              <div class="sim-verilog-view">
+                <div class="code-header">
+                  <span class="file-name">full_adder.v (Verilog HDL)</span>
+                  <span class="code-badge">RTL</span>
+                </div>
+                <pre class="font-mono"><code><span class="syn-kwd">module</span> full_adder (
+    <span class="syn-kwd">input</span>  wire a, b, cin,
+    <span class="syn-kwd">output</span> wire sum, cout
+);
+    <span class="syn-kwd">assign</span> sum  = a ^ b ^ cin;
+    <span class="syn-kwd">assign</span> cout = (a &amp; b) | (cin &amp; (a ^ b));
+<span class="syn-kwd">endmodule</span></code></pre>
+                <div class="sim-status-banner">
+                  <span class="dot-active"></span>
+                  <span id="adder-status">Simulated State: A=1, B=0, Cin=1 &rarr; Sum=0, Cout=1</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Simulator 2: MUX -->
+          <div class="sim-content-pane" id="sim-mux">
+            <div class="sim-layout">
+              <div class="sim-controls">
+                <h4 class="sim-title">Toggle Inputs (D0, D1, Select):</h4>
+                
+                <div class="toggle-switch-group">
+                  <div class="toggle-item">
+                    <span class="toggle-name">Input D0</span>
+                    <button class="logic-btn" id="btn-d0" data-val="0">0</button>
+                  </div>
+                  <div class="toggle-item">
+                    <span class="toggle-name">Input D1</span>
+                    <button class="logic-btn" id="btn-d1" data-val="1">1</button>
+                  </div>
+                  <div class="toggle-item">
+                    <span class="toggle-name">Select (SEL)</span>
+                    <button class="logic-btn logic-sel" id="btn-sel" data-val="1">1</button>
+                  </div>
+                </div>
+
+                <div class="sim-output-box">
+                  <div class="output-item">
+                    <span class="out-label">Output (Y):</span>
+                    <span class="out-val text-cyan" id="out-mux-y">1</span>
+                  </div>
+                  <div class="output-item">
+                    <span class="out-label">Active Channel:</span>
+                    <span class="out-val text-green" id="out-mux-path">D1 &rarr; Y</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sim-verilog-view">
+                <div class="code-header">
+                  <span class="file-name">mux2to1.v (Verilog HDL)</span>
+                  <span class="code-badge">RTL</span>
+                </div>
+                <pre class="font-mono"><code><span class="syn-kwd">module</span> mux2to1 (
+    <span class="syn-kwd">input</span>  wire d0, d1, sel,
+    <span class="syn-kwd">output</span> wire y
+);
+    <span class="syn-kwd">assign</span> y = sel ? d1 : d0;
+<span class="syn-kwd">endmodule</span></code></pre>
+                <div class="sim-status-banner">
+                  <span class="dot-active"></span>
+                  <span id="mux-status">SEL=1 routes D1 to Output Y.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="section edu-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">ACADEMICS</span>
+          <h2 class="section-title">Education</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="edu-card-single">
+          <div class="edu-card-top">
+            <div>
+              <span class="timeline-badge">2024 &mdash; 2028 &bull; EXPECTED GRADUATION</span>
+              <h3 class="degree-title">B.E. Electronics Engineering &mdash; VLSI Design &amp; Technology</h3>
+              <div class="institution-name">Rajalakshmi Institute of Technology, Chennai</div>
+              <div class="timeline-sub">Currently in 3rd Year</div>
+            </div>
+            <div class="cgpa-badge">
+              <span class="cgpa-label">CGPA</span>
+              <span class="cgpa-value">7.1 / 10</span>
+            </div>
+          </div>
+          <p class="edu-desc">
+            Building a strong technical foundation across Embedded Systems, Microcontrollers, Sensor Interfacing, 
+            VLSI Design, Verilog HDL, and Digital Electronics.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & CONNECT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">CONNECT</span>
+          <h2 class="section-title">Let's Build Something Meaningful</h2>
+          <p class="section-subtitle">
+            I am actively looking for internship and project opportunities in <strong>Embedded Systems &amp; IoT Design</strong>. Feel free to reach out directly.
+          </p>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Direct Info -->
+          <div class="contact-info-panel">
+            <h3 class="panel-title">Direct Contact Channels</h3>
+            <p class="panel-desc">
+              Connect with me via email, phone, or LinkedIn to discuss internships, collaborations, or technical projects.
+            </p>
+
+            <div class="contact-card-list">
+              <!-- Phone -->
+              <div class="contact-card">
+                <div class="contact-card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div class="contact-card-body">
+                  <span class="card-channel">PHONE / WHATSAPP</span>
+                  <a href="tel:+919487282351" class="card-link">+91 9487282351</a>
+                </div>
+                <a href="tel:+919487282351" class="btn-copy">Call</a>
+              </div>
+
+              <!-- Email -->
+              <div class="contact-card">
+                <div class="contact-card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-card-body">
+                  <span class="card-channel">EMAIL ADDRESS</span>
+                  <a href="mailto:aslamwajith.vlsi@gmail.com" class="card-link" id="email-text">aslamwajith.vlsi@gmail.com</a>
+                </div>
+                <button class="btn-copy" id="copy-email-btn" title="Copy email address" aria-label="Copy Email">
+                  <span class="copy-text">Copy</span>
+                </button>
+              </div>
+
+              <!-- LinkedIn -->
+              <div class="contact-card">
+                <div class="contact-card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </div>
+                <div class="contact-card-body">
+                  <span class="card-channel">LINKEDIN</span>
+                  <a href="https://www.linkedin.com/search/results/all/?keywords=Aslam%20Wajith" target="_blank" rel="noopener noreferrer" class="card-link">
+                    Aslam Wajith &rarr;
+                  </a>
+                </div>
+                <span class="badge-status">Connect</span>
+              </div>
+
+              <!-- GitHub -->
+              <div class="contact-card">
+                <div class="contact-card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </div>
+                <div class="contact-card-body">
+                  <span class="card-channel">GITHUB</span>
+                  <a href="https://github.com/aslamwajith33" target="_blank" rel="noopener noreferrer" class="card-link">
+                    github.com/aslamwajith33 &rarr;
+                  </a>
+                </div>
+                <span class="badge-status">Explore</span>
+              </div>
+            </div>
+
+            <!-- Resume Download Box -->
+            <div class="resume-download-box">
+              <div class="resume-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                </svg>
+              </div>
+              <div class="resume-text-group">
+                <div class="resume-box-title">Need my Resume?</div>
+                <div class="resume-box-sub">Click to preview, print, or download my verified technical CV</div>
+              </div>
+              <button class="btn btn-primary btn-sm" id="contact-resume-trigger">
+                <span>View Resume</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Right: Clean Contact Form -->
+          <div class="contact-form-panel">
+            <h3 class="panel-title">Send a Direct Message</h3>
+            <form id="portfolio-contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="contact-name">Your Name</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="e.g. Recruiter / Project Lead" required />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email">Your Email</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="name@company.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject">Subject</label>
+                <input type="text" id="contact-subject" class="form-input" placeholder="Internship Opportunity / Embedded Project" required />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" class="form-textarea" rows="4" placeholder="Hello Aslam, I would like to discuss..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block btn-glow" id="send-msg-btn">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo-text">
+            <span class="logo-name">Aslam Wajith I</span>
+            <span class="logo-tag">B.E. Electronics Engineering &bull; RIT Chennai</span>
+          </div>
+          <p class="footer-quote">
+            &ldquo;Build. Learn. Experiment. Improve.&rdquo;
+          </p>
+        </div>
+
+        <div class="footer-links-group">
+          <div class="f-col">
+            <span class="f-title">Quick Links</span>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#certificates">Certificates</a>
+            <a href="#education">Education</a>
+          </div>
+          <div class="f-col">
+            <span class="f-title">Connect</span>
+            <a href="https://github.com/aslamwajith33" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/search/results/all/?keywords=Aslam%20Wajith" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="mailto:aslamwajith.vlsi@gmail.com">Email</a>
+            <a href="tel:+919487282351">Phone</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="copyright-text">
+          &copy; 2026 Aslam Wajith I. All rights reserved. Clean, responsive embedded portfolio.
+        </div>
+        <a href="#hero" class="back-to-top" aria-label="Back to top">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+          <span>TOP</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL: EXACT VERIFIED RESUME -->
+  <div class="modal-backdrop" id="resume-modal" role="dialog" aria-modal="true" aria-labelledby="resume-modal-title">
+    <div class="modal-dialog resume-dialog">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <h3 id="resume-modal-title">Aslam Wajith I &mdash; Official Resume</h3>
+          <span class="badge-status">B.E. Electronics Engineering</span>
+        </div>
+        <div class="modal-header-actions">
+          <button class="btn btn-primary btn-sm" id="print-resume-btn">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 6 2 18 2 18 9"></polyline>
+              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+              <rect x="6" y="14" width="12" height="8"></rect>
+            </svg>
+            <span>Print / Save PDF</span>
+          </button>
+          <button class="modal-close-btn" id="close-resume-modal" aria-label="Close Resume Modal">&times;</button>
+        </div>
+      </div>
+      
+      <div class="modal-body printable-resume" id="printable-resume">
+        <!-- EXACT RESUME MATCHING USER'S PDF -->
+        <div class="resume-sheet">
+          <div class="resume-header">
+            <h1 class="res-name">AHMED ASLAM WAJITH I</h1>
+            <div class="res-subtitle">Electronics Engineering | Embedded System &amp; IoT</div>
+            <div class="res-contact-row">
+              <span>+91 9487282351</span> &bull; 
+              <span>aslamwajith.vlsi@gmail.com</span> &bull; 
+              <a href="https://www.linkedin.com/search/results/all/?keywords=Aslam%20Wajith" target="_blank" rel="noopener noreferrer">LinkedIn</a> &bull; 
+              <a href="https://github.com/aslamwajith33" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+
+          <div class="res-section">
+            <h3 class="res-section-title">PROFESSIONAL SUMMARY</h3>
+            <p class="res-text">
+              Electronics and Communication Engineering student specializing in VLSI Design and Technology, with hands-on experience in 
+              digital electronics, Verilog, embedded systems, IoT, and hardware-based projects. Familiar with C, Python, Git/GitHub, Linux, and 
+              basic SQL and embedded firmware. Developed academic and prototype projects involving environmental monitoring, sensors, 
+              ESP32, LoRa communication, and edge-based intelligence. Seeking an internship to apply practical engineering skills and gain 
+              industry experience in VLSI, embedded systems, or IoT.
+            </p>
+          </div>
+
+          <div class="res-section">
+            <h3 class="res-section-title">TECHNICAL SKILLS</h3>
+            <div class="res-skills-list">
+              <p><strong>Languages:</strong> C, Python, Verilog HDL, JavaScript</p>
+              <p><strong>VLSI &amp; Digital Design:</strong> Digital Logic Design, RTL Design, Verilog, CMOS Fundamentals.</p>
+              <p><strong>Embedded &amp; IoT:</strong> Embedded C, ESP32, Sensor Interfacing, LoRa, UART, I2C, SPI Basics, IoT Fundamentals.</p>
+              <p><strong>VLSI Tools:</strong> Quartus Prime, Arduino IDE, VS Code, Git, GitHub.</p>
+              <p><strong>Other:</strong> ASIC Design Flow, FPGA Fundamentals, DFT, ATPG, Scan Chain Basics, Edge AI Fundamentals.</p>
+            </div>
+          </div>
+
+          <div class="res-section">
+            <h3 class="res-section-title">PROJECTS</h3>
+            
+            <div class="res-entry">
+              <div class="res-entry-head">
+                <strong>NEERMITRA &mdash; AI-POWERED SMART AGRICULTURE PLATFORM</strong>
+                <span>Project Lead | Full-Stack Developer | <a href="http://www.neermitra.com" target="_blank">www.neermitra.com</a></span>
+              </div>
+              <ul class="res-bullets">
+                <li>Built and deployed an agriculture platform integrating crop selection, disease identification, weather, soil insights, and agricultural resources.</li>
+                <li>Developed Crop Doctor for image-based identification of potential crop diseases and Crop Planner for crop recommendations based on agricultural factors.</li>
+                <li>Integrated a Smart Dashboard with weather and soil-moisture insights, plus Government Schemes and a House Farming Guide.</li>
+                <li>Led development and technical demonstrations; presented the platform at 5+ technical/national-level events, earning 4 national-level presentation awards.</li>
+              </ul>
+            </div>
+
+            <div class="res-entry">
+              <div class="res-entry-head">
+                <strong>DISASTER MANAGEMENT SYSTEM &mdash; Edge AI Disaster Monitoring System</strong>
+                <span>Hardware &amp; IoT Developer | <a href="https://disaster-management-eta-one.vercel.app/" target="_blank">Link</a></span>
+              </div>
+              <ul class="res-bullets">
+                <li>Developed an ESP32-S3-based Disaster Management System integrating multiple sensors and LoRa communication for real-time hazard monitoring, alerts, and offline edge intelligence.</li>
+              </ul>
+            </div>
+
+            <div class="res-entry">
+              <div class="res-entry-head">
+                <strong>FIREGUARD AI</strong>
+                <span>C | Python | Verilog HDL</span>
+              </div>
+              <ul class="res-bullets">
+                <li>Developed FireGuard AI, an AI-powered wildfire monitoring and emergency response platform for real-time fire-risk detection, prediction, and intelligent alerts.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="res-section">
+            <h3 class="res-section-title">CERTIFICATES</h3>
+            <ul class="res-bullets">
+              <li><strong>IoT Specialization</strong> &ndash; Elewayte IoT, sensor interfacing &amp; hardware deployment.</li>
+              <li><strong>INNOHACK &rsquo;26</strong> &ndash; Participated in a Cyber Security hackathon focused on technology innovation and problem-solving.</li>
+              <li><strong>Python Internship &ndash; CodSoft</strong> &ndash; Completed a 1-month practical internship focused on Python and software development.</li>
+            </ul>
+          </div>
+
+          <div class="res-section">
+            <h3 class="res-section-title">EDUCATION</h3>
+            <div class="res-entry">
+              <div class="res-entry-head">
+                <strong>RAJALAKSHMI INSTITUTE OF TECHNOLOGY, CHENNAI</strong>
+                <span>2024 &ndash; 2028</span>
+              </div>
+              <div class="res-entry-sub">B.E. Electronics Engineering &mdash; VLSI Design &amp; Technology | <strong>CGPA: 7.1/10</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: PROJECT DETAILS -->
+  <div class="modal-backdrop" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="proj-modal-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <h3 id="proj-modal-title">Project Details</h3>
+          <span class="badge-status" id="proj-modal-tag">Architecture</span>
+        </div>
+        <button class="modal-close-btn" id="close-project-modal" aria-label="Close Modal">&times;</button>
+      </div>
+      <div class="modal-body" id="proj-modal-content">
+        <!-- Injected by script -->
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast-notification" id="toast" role="alert" aria-live="polite">
+    <svg class="toast-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+    <span id="toast-message">Copied to clipboard</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
